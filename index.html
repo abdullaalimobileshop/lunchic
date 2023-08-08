@@ -21,10 +21,10 @@
   <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
+<!--   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="admin_dashboard">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png"> -->
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
@@ -61,14 +61,25 @@
     // https://firebase.google.com/docs/web/setup#available-libraries
 
     // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: apiKey,
-      authDomain: authDomain,
-      projectId: projectId,
-      storageBucket: storageBucket,
-      messagingSenderId: messagingSenderId,
-      appId: appId
-    };
+
+const firebaseConfig = {
+
+  apiKey: "AIzaSyCZnxyp5GWOyXxcPAQgNZhVMy6VkQgWo5o",
+
+  authDomain: "table-now-5001c.firebaseapp.com",
+
+  databaseURL: "https://table-now-5001c-default-rtdb.europe-west1.firebasedatabase.app",
+
+  projectId: "table-now-5001c",
+
+  storageBucket: "table-now-5001c.appspot.com",
+
+  messagingSenderId: "142445947528",
+
+  appId: "1:142445947528:web:800d033c46f27efba40d3d"
+
+};
+
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
