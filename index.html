@@ -83,6 +83,20 @@ const firebaseConfig = {
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
+
+const rootRef = getDatabase(app).ref();
+
+// Read data from the root node
+rootRef.once("value")
+  .then((snapshot) => {
+    const data = snapshot.val();
+    console.log("Data from root node:", data);
+  })
+  .catch((error) => {
+    console.error("Error reading data:", error);
+  });
+
+    
   </script>
   <script src="main.dart.js" type="application/javascript"></script> 
 </body>
